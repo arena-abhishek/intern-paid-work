@@ -1,0 +1,407 @@
+/* Root Variables */
+:root {
+  --primary-color: #0f4c36;
+  --secondary-color: #6c757d;
+  --tertiary-color: #029354;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --cream-color: #fff6f4;
+}
+
+.primary-color {
+  color: var(--primary-color) !important;
+}
+
+.tertiary-color {
+  color: var(--tertiary-color) !important;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color) !important;
+}
+
+.goal-card-icon {
+  background-color: var(--primary-color) !important;
+}
+
+.btn {
+  background-color: var(--tertiary-color) !important;
+  color: var(--light-color) !important;
+  border: none !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.read-more-link {
+  color: var(--tertiary-color) !important;
+  transition: color 0.3s ease;
+}
+.read-more-link:hover {
+  color: var(--primary-color) !important;
+  transition: color 0.2s ease;
+}
+
+/* Header Styles */
+.navbar {
+  transition: all 0.3s ease;
+  background-color: var(--cream-color);
+}
+
+.navbar.sticky {
+  background-color: var(--cream-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation Styles */
+.navbar-scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  position: relative;
+  font-size: 18px !important;
+  padding: 0.5rem 1rem;
+  color: var(--primary-color) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--tertiary-color) !important;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  color: var(--tertiary-color) !important;
+  width: 100%;
+}
+
+.nav:hover{
+  color: var(--tertiary-color) !important
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  margin-top: 83px !important;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 1020px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffc107;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffc107;
+  opacity: 1;
+}
+
+/* Social Icons */
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon.facebook {
+  color: var(--primary-color) !important;
+}
+.social-icon.twitter {
+  color: var(--primary-color) !important;
+}
+.social-icon.linkedin {
+  color: var(--primary-color) !important;
+}
+.social-icon.instagram {
+  color: var(--primary-color) !important;
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2 !important;
+}
+.social-icon.twitter:hover {
+  color: #1da1f2 !important;
+}
+.social-icon.linkedin:hover {
+  color: #0a66c2 !important;
+}
+.social-icon.instagram:hover {
+  color: #e4405f !important;
+}
+
+/* Product Cards */
+.product-card {
+  transition: transform 0.3s ease;
+  /* border: none; */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px !important;
+  position: relative; 
+  padding: 50px;
+}
+
+.product-card img {
+
+  width: 100%;         
+  height: 100%;       
+  object-position: center;
+  object-fit: cover; 
+}
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+header  {
+  background-color: var(--cream-color); 
+  margin-bottom: 70px;
+}
+
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/stats-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 0;
+}
+
+/* Investor Cards */
+.investor-card {
+  border-left: 4px solid var(--primary-color);
+}
+
+/* News Cards */
+.news-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contact Cards */
+.contact-info-card {
+  transition: all 0.3s ease;
+}
+
+
+.contact-info-card .contact-info-hover-card:hover {
+  background-color: var(--tertiary-color);
+  color: white !important;
+}
+
+
+.contact-info-card:hover .text-warning {
+  color: white !important;
+}
+
+/* Button Hover Effects */
+.btn-hover-warning:hover {
+  color: var(--primary-color) !important;
+}
+
+
+/* Team Section */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Search Overlay */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.search-overlay.active {
+  display: flex;
+}
+
+.search-form {
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-search {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--cream-color);
+  margin-top: 70px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: px;
+}
+
+.swiper-pagination-progressbar {
+  height: 5px;
+}
+.swiper-pagination-progressbar-fill {
+  background-color: var(--primary-color) !important;
+}
+
+.latest-news-card {
+  height: 250px !important;
+}
+.about-card {
+  height: 400px !important;
+}
+.about-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}

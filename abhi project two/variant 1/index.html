@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Maulik - Innovating Chemistry for a Sustainable Future. Leading chemical solutions provider specializing in sustainable and innovative chemical products."
+    />
+    <title>Maulik - Innovative Chemical Solutions</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Maulik Logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Market & Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="solutions.html#automotive"
+                      >Automotive</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="solutions.html#textiles"
+                      >Textiles</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="solutions.html#pharma"
+                      >Pharmaceuticals</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="innovation.html">Innovation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sustainability.html"
+                  >Sustainability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tools.html">Tools & Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+            </ul>
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Innovating Chemistry for a Sustainable Future</h1>
+        <p>Leading the way in sustainable chemical solutions</p>
+        <a href="solutions.html" class="cta-button">Explore Our Solutions</a>
+      </div>
+    </section>
+
+  
+    <section class="market-solutions py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Market &amp; Solutions</h2>
+        <div class="row mb-4">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="market-intro">
+              <h3>Innovative Solutions for Every Industry</h3>
+              <p>
+                At Maulik, we deliver cutting-edge chemical solutions that drive
+                innovation across multiple industries. Our expertise spans
+                automotive, textiles, pharmaceuticals, and more.
+              </p>
+              <a href="solutions.html" class="btn btn-primary"
+                >Explore All Solutions</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Countries Served</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Products</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Patents</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper solutions-slider">
+          <div class="swiper-wrapper">
+            <!-- Solution cards will be populated via JavaScript -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="innovation py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Innovation Hub</h2>
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="lead">
+              Driving the future of sustainable chemistry through groundbreaking
+              research and development
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="innovation-card">
+              <i class="fas fa-flask"></i>
+              <h3>Green Chemistry</h3>
+              <p>
+                Pioneering sustainable chemical processes that minimize
+                environmental impact
+              </p>
+              <a
+                href="innovation.html#green"
+                class="btn btn-outline-primary mt-3"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="innovation-card">
+              <i class="fas fa-microscope"></i>
+              <h3>R&D Excellence</h3>
+              <p>
+                State-of-the-art research facilities driving chemical innovation
+              </p>
+              <a
+                href="innovation.html#research"
+                class="btn btn-outline-primary mt-3"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="innovation-card">
+              <i class="fas fa-atom"></i>
+              <h3>Smart Materials</h3>
+              <p>
+                Developing next-generation materials for future applications
+              </p>
+              <a
+                href="innovation.html#materials"
+                class="btn btn-outline-primary mt-3"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          Sustainability Commitment
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="sustainability-content">
+              <h3>Creating a Sustainable Future</h3>
+              <p class="lead">
+                Our commitment to sustainability drives every aspect of our
+                business, from research and development to production and
+                distribution.
+              </p>
+              <div class="sustainability-goals">
+                <div class="goal-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>Carbon Neutral by 2030</span>
+                </div>
+                <div class="goal-item">
+                  <i class="fas fa-recycle"></i>
+                  <span>100% Renewable Energy</span>
+                </div>
+                <div class="goal-item">
+                  <i class="fas fa-water"></i>
+                  <span>Zero Waste to Landfill</span>
+                </div>
+              </div>
+              <a href="sustainability.html" class="btn btn-success mt-4"
+                >Our Sustainability Journey</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="sustainability-image">
+              <img
+                src="images/sustainability.jpg"
+                alt="Sustainable Chemistry"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="latest-news py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Latest News</h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="news-card">
+              <img src="images/news1.jpg" alt="News 1" class="news-image" />
+              <div class="news-content">
+                <span class="news-date">January 30, 2025</span>
+                <h3>New Green Chemistry Initiative</h3>
+                <p>
+                  Maulik launches groundbreaking sustainable chemistry
+                  program...
+                </p>
+                <a href="news.html" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="news-card">
+              <img src="images/news2.jpg" alt="News 2" class="news-image" />
+              <div class="news-content">
+                <span class="news-date">January 25, 2025</span>
+                <h3>Industry Partnership Announcement</h3>
+                <p>
+                  Strategic collaboration with leading automotive
+                  manufacturer...
+                </p>
+                <a href="news.html" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="news-card">
+              <img src="images/news3.jpg" alt="News 3" class="news-image" />
+              <div class="news-content">
+                <span class="news-date">January 20, 2025</span>
+                <h3>Research Breakthrough</h3>
+                <p>Revolutionary discovery in biodegradable polymers...</p>
+                <a href="news.html" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="news.html" class="btn btn-primary">View All News</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="contact-cta py-5">
+      <div class="container">
+        <div class="cta-content text-center" data-aos="fade-up">
+          <h2>Ready to Transform Your Industry?</h2>
+          <p class="lead">
+            Connect with our experts to discover how Maulik's solutions can
+            drive your success
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+            <a href="tools.html" class="btn btn-outline-primary btn-lg"
+              >Explore Our Tools</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/logo.png" alt="Maulik Logo" class="footer-logo" />
+            <p>Innovating for a sustainable future</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="solutions.html">Market & Solutions</a></li>
+              <li><a href="innovation.html">Innovation</a></li>
+              <li><a href="sustainability.html">Sustainability</a></li>
+              <li><a href="tools.html">Tools & Services</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Contact Us</h4>
+            <ul class="contact-info">
+              <li><i class="fas fa-envelope"></i> contact@maulik.com</li>
+              <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Chemical Avenue,
+                Industrial District
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
