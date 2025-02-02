@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pure and natural mustard oil for your family's health">
+    <title>{title} - GoldenPress Oils</title>
+    <link rel="stylesheet"
+      href="css/styles.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+      <script src="js/script.js" defer></script>
+      <script src="js/layout.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-form">
+            <i class="fas fa-times close-search" onclick="toggleSearch()"></i>
+            <div class="input-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Search...">
+                <button class="btn btn-warning">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-warning" href="index.html">GoldenPress Oils</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="brands.html">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sustainability.html">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="investors.html">Investors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="btn btn-link text-dark p-0" onclick="toggleSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="d-none d-sm-flex gap-3">
+                            <a href="https://facebook.com" target="_blank" class="text-secondary social-icon facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="text-secondary social-icon twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="text-secondary social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="text-secondary social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        {content}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-semibold mb-3">About GoldenPress</h3>
+                    <p class="text-muted">Pure and natural mustard oil for your family's health. Pressed with care for a healthy lifestyle.</p>
+                    <div class="mt-3">
+                        <img src="images/iso-certified.png" alt="ISO Certified" class="me-2" height="40">
+                        <img src="images/fssai-logo.png" alt="FSSAI Certified" height="40">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-semibold mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="about.html" class="text-muted text-decoration-none btn-hover-warning">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="brands.html" class="text-muted text-decoration-none btn-hover-warning">Our Brands</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="sustainability.html" class="text-muted text-decoration-none btn-hover-warning">Sustainability</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="careers.html" class="text-muted text-decoration-none btn-hover-warning">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-semibold mb-3">Contact Info</h3>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Business Park, New Delhi, India
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +91 123 456 7890
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@goldenpressoils.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-semibold mb-3">Newsletter</h3>
+                    <p class="text-muted small">Subscribe to our newsletter for updates and exclusive offers.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-warning" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="text-muted mb-0">&copy; 2023 GoldenPress Oils. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                        <a href="terms.html" class="text-muted text-decoration-none me-3 btn-hover-warning">Terms</a>
+                        <a href="privacy.html" class="text-muted text-decoration-none me-3 btn-hover-warning">Privacy</a>
+                        <a href="cookies.html" class="text-muted text-decoration-none btn-hover-warning">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        // Efficient search toggle
+        function toggleSearch() {
+            document.getElementById('searchOverlay').classList.toggle('active');
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+
+        // Active link handler
+        const currentLocation = location.pathname;
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
